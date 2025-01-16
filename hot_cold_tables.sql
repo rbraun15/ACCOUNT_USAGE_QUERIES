@@ -23,7 +23,10 @@ from snowflake.account_usage.access_history  ;
 
  ---------------------------------
  ---------------------------------
- --  Query History By Object
+--
+--  #1
+--
+--  Query History By Object
  --     snowflake.account_usage.tables
  --     snowflake.account_usage.access_history
  ---------------------------------
@@ -101,38 +104,14 @@ WHERE object_type = 'BASE TABLE'
 ORDER BY database, schema, object_name;
 
 
----------
-
-
-Test to see if views show up 1/8 9:32 AM EST;
--- Base table was verified as indeed the base table, even when the view was queried.
-
-
- -- table
-select * from snowdev.demo.sec_filings_index limit 5;
-
--- view above single table
-select * from snowdev.demo.sec_filings_index_view limit 5;
-
--- question will sec_filings_index show up 2x in the history query or once? Yes it did !! 
-
-
-----------------------------
-----------------------------
---ADD Account Usage
-----------------------------
-----------------------------
-
-
-select * from snowflake.account_usage.table_dml_history limit 10;
-select table_id, rows_added, rows_removed, rows_updated from snowflake.account_usage.table_dml_history limit 10;
-
-
-
+ 
 
 
  -------------------------------------------------
  -------------------------------------------------
+--
+--  #2
+--
  --  Query History By Object
  --     snowflake.account_usage.tables
  --     snowflake.account_usage.access_history
@@ -208,6 +187,7 @@ ORDER BY database, schema, object_name;
 
 
 ----
+-- Random Stuff
 ----
 
 
