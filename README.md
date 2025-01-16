@@ -1,4 +1,4 @@
-# See Tables and Ativity
+# See Tables and Activity
 
 Leverages Snowflake Account_Usage data to identify tables With High and low activity.  
 
