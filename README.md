@@ -1,6 +1,6 @@
 # See Tables and Activity
 
-Leverages Snowflake Account_Usage data to identify tables With High and low activity.  
+Leverages Snowflake Account_Usage data to identify tables with high and low activity.  
 
 See metrics such as table  name, rowcount, number of queries, date of first/last access, # rows added/removed/updated.
 
