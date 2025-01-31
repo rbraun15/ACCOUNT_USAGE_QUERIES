@@ -1,6 +1,6 @@
 ---------------------------------
  ---------------------------------
- --  Access History By Object
+ --  Access History By Table
  --     snowflake.account_usage.tables
  --     snowflake.account_usage.access_history
  --  Query 1
